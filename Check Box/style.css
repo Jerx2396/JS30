@@ -1,0 +1,116 @@
+body{
+    background-color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    filter:none;
+}
+.list{
+    width:300px;
+    box-shadow: -1px 7px 5px 0px rgba(0,0,0,0.39);
+}
+.added{
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    width:100%;
+    border: 1px solid #a6a6a6;
+}
+.firstR{
+    margin-top: -30px;
+}
+.checkbox{
+    border: 1px solid #a6a6a6;
+    width: 15px;
+    height: 15px;
+    align-self: center;
+    margin-left: 8px;
+    background-color: white;
+    appearance: none;
+}
+.checkbox:checked::after{
+    content:"✔";
+    position: relative;
+    top: -13px;
+    font-size: 25px;
+}
+p{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-left: 1px solid #a6a6a6;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width:100%;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: max-content;
+    margin-left: 5px;
+}
+#add{
+    position: relative;
+    right:-370px;
+    height: 30px;
+    width: 30px;
+    background:none;
+}
+#panel{
+    background-color: white;
+    height:450px;
+    width: 350px;
+    position: fixed;
+    left:40%;
+    right: 50%;
+    top: 10%;
+    bottom: 50%;
+    visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#block{
+    height: 200%;
+    width:100%;
+    position: fixed;
+    display: none;
+    z-index: 0;
+}
+label{
+    font-style: arial;
+    font-size: 20px;
+}
+#submit{
+    height:20px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+#text{
+    border-radius: 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    outline: none;
+    text-indent: 10px;
+}
+@keyframes fadeout {
+    from {opacity: 1}
+    to {opacity: 0}
+}
+iframe{
+    height: 25%;
+    width:50%;
+    background-color: white;
+    display: none;
+}
