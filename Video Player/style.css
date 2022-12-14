@@ -1,0 +1,191 @@
+@keyframes floatup {
+    from{top:20px;opacity:0;}
+    to{top:0px;opacity:1;}
+}
+@keyframes floatdown {
+    from{top:0px;opacity:1;}
+    to{top:20px;opacity:0;}
+}
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity: 1;}
+}
+@keyframes fadeout{
+    from{opacity:1;}
+    to{opacity: 0;}
+}
+:root{
+    --progress:0%;
+    --margin:-5px;
+    --height: 20px;
+    --width: 20px;
+    --animate:fade;
+    --transition:0.5s;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial;
+}
+.animate1{
+    animation-name: floatup;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.animate2{
+    animation-name: floatdown;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+.animate3{
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.animate4{
+    animation-name: fadeout;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+#bg{
+    background-image: url("./img/Screenshot\ \(213\).png");
+    background-repeat: no-repeat;
+    height: 105vh;
+    width: 100%;
+    margin-left: -20px;
+    margin-top: -20px;
+    filter: blur(10px);
+    position: absolute;
+    z-index: -1;
+}
+video{
+    width:700px;
+    margin-top: 100px;
+    z-index: 1;
+}
+#player_controls{
+    height: 395px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -20px;
+    position:absolute;
+    z-index: 3;
+    margin-left: 0px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+.first_progress{
+    background-color: orange;
+    height:3px;
+    width:var(--progress);
+    position: relative;
+    top: 390px;
+    z-index: 2;
+    visibility: hidden;
+}
+.second_progress{
+    background: rgba(0, 0, 0, 0.5);
+    height: 15px;
+    width:100%;
+    margin-top: 330px;
+    visibility: hidden;
+    position: relative;
+}
+#range{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    appearance: none;
+    border: none;
+    outline: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    background: rgba(0, 0, 0, 0);
+    position: relative;
+}
+#range::-webkit-slider-thumb{
+    background-color: orange;
+    appearance: none;
+    height: var(--height);
+    width: var(--width);
+    border-radius: 50px;
+    margin-left: var(--margin);
+    transition: var(--transition);
+}
+#seek{
+    background-color: orange;
+    height: 15px;
+    width: var(--progress);
+    margin-top: -19px;
+}
+
+#playfb{
+    height: 50px;
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    position: relative;
+}
+#play{
+    background-image: url("./img/NicePng_youtube-play-button-png_312658\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    height: 100%;
+    width:100px;
+    cursor: pointer;
+}
+#backwards{
+    background-image: url("./img/pngegg\ \(2\)\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    height: 100%;
+    width:50px;
+    cursor: pointer;
+}
+#forwards{
+    background-image: url("./img/pngegg\ \(2\)\ \(2\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
+    height: 100%;
+    width:50px;
+    cursor: pointer;
+}
+#vol_ico{
+    background-image: url("./img/pngegg\ \(3\)\ \(1\).png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px 20px;
+    height:100%;
+    width:50px;
+    margin-left: -120px;
+    cursor: pointer;
+}
+#volume{
+    width: 170px;
+    margin-right: 20px;
+    margin-left: -5px;
+    cursor: pointer;
+}
+#speed_name{
+    color: white;
+    margin-right: 5px;
+    margin-left: 90px;
+    font-size: 13.5px;
+}
+#speed{
+    height: 20px;
+    width: 20px;
+    margin-right: -60px;
+    cursor: pointer;
+}
