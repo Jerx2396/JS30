@@ -1,0 +1,34 @@
+body{
+    background-image: url('./img/yurii-stupen-JfhaKruKFvU-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: 800px 500px;
+    max-width:800px;
+    max-height:500px;
+    background-color: none;
+    overflow-y: visible;
+}
+body div{
+    margin-left: 430px;
+}
+body div button{
+    margin:3px;
+    border-radius: 360px;
+    border-width: 0.5px;
+    height: 30px;
+    width: 30px;
+    border-color: black;
+    background-color: white;
+    color:black;
+    display: inline;
+    transition: 0.05s;
+}
+body div button:hover{
+    border-color: white;
+    background-color: black;
+    color:white;
+}
+.playing{
+    border-color: white;
+    background-color: black;
+    color:white;
+}
