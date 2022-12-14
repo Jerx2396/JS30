@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Video Player</title>
+    <script defer src="./index.js"></script>
+</head>
+<body>
+    <div id="bg"></div>
+    <video src="./mp4/back number - ハッピーエンド (full).mp4"></video>
+    <div id="player_controls">
+        <div class="first_progress"></div>
+        <div class="second_progress">
+            <input type="range" id="range" min="0" max="100" value="0">
+            <div id="seek"></div>
+        </div>
+        <div id="playfb">
+            <div id="vol_ico"></div>
+            <input id="volume" min="0" max="100" value="100" type="range">
+            <div id="backwards"></div>
+            <div id="play"></div>
+            <div id="forwards"></div>
+            <label id="speed_name" for="speed">Speed</label>
+            <select name="speed" id="speed">
+                <option value="0.25">0.25</option>
+                <option value="0.5">0.5</option>
+                <option value="0.75">0.75</option>
+                <option selected value="1">Normal</option>
+                <option value="1.25">1.25</option>
+                <option value="1.5">1.5</option>
+                <option value="1.75">1.75</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+        
+    </div>
+</body>
+</html>
