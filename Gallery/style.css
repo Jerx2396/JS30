@@ -1,0 +1,108 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+}
+.panel{
+    display: flex;
+    margin-top: -20px;
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow: hidden;
+}
+
+.panel1{
+    width: 100%;
+    height: 105vh;
+    background-image: url("./img/1042900_2.jpg");
+    background-size: 1366px 768px;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    text-align: center;
+    margin-bottom: -16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+
+.panel2{
+    width: 100%;
+    height: 105vh;
+    background-image: url("./img/1062199.png");
+    background-size: 1366px 768px;
+    background-repeat: no-repeat;
+    background-position-x: -500px;
+    text-align: center;
+    margin-bottom: -16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.panel3{
+    width: 100%;
+    height: 105vh;
+    background-image: url("./img/419392.png");
+    background-size: 1366px 768px;
+    background-repeat: no-repeat;
+    background-position-x: -200px;
+    text-align: center;
+    margin-bottom: -16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.panel4{
+    width: 100%;
+    height: 105vh;
+    background-image: url("./img/743442.jpg");
+    background-size: 1366px 768px;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-bottom: -16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.panel5{
+    width: 100%;
+    height: 105vh;
+    background-image: url("./img/532559.jpg");
+    background-size: 1700px 768px;
+    background-repeat: no-repeat;
+    background-position-x: -300px;
+    text-align: center;
+    margin-bottom: -16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 2s;
+}
+.panels p{
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: 1s;
+    /*mix-blend-mode: difference;*/
+}
+.panels > *:nth-child(2){
+    font-size: 40px;
+}
+.panels > *:first-child{
+    transform: translateY(-600%);
+    font-size: 25px;
+}
+.panels > *:last-child{
+    transform: translateY(600%);
+    font-size: 25px;
+}
+.open-active{
+    transform: translateY(0);
+}
+.open{
+    width: 500%;
+    transition: 2s;
+}

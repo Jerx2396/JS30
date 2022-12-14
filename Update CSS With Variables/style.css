@@ -1,0 +1,49 @@
+:root{
+    --spacing:40px;
+    --blur:10px;
+    --color:#FFFF00;
+}
+body{
+    display: block;
+    background-color: black;
+}
+h2{
+    font-family: Arial;
+    color:#ffffff;
+    text-align: center;
+}
+.color{
+    color:var(--color);
+}
+label{
+    color:white;
+}
+.controls{
+    display: inline-block;
+    font-family: Arial;
+    width: 100%;
+    text-align: center;
+}
+.floor{
+    height: 320px;
+    width: 523px;
+    background-color: var(--color);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 200px;
+    width: 400px;
+    filter: blur(var(--blur));
+    padding-top:var(--spacing);
+    padding-left: var(--spacing);
+}
